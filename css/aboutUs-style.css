@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/*
+color 1: #00D1C9 - Turquoise
+color 2: #FA5800 - Orange
+color 3: #1DCCE4 - Ocean Blue
+color 4: #3A3A3A - Gray
+color 5: #022B3D - Navy Blue 
+
+Mobile: 360 x 640
+Mobile: 375 x 667
+Mobile: 360 x 720
+iPhone X: 375 x 812
+Pixel 2: 411 x 731
+Tablet: 768 x 1024
+Laptop: 1366 x 768
+High-res laptop or desktop: 1920 x 1080
+
+576px for portrait phones
+768px for tablets
+992px for laptops
+1200px for large devices
+
+*/
+
+body, html {
+
+	font-family: 'Poppins', sans-serif !important;
+	margin: 0;
+}
+
+p {
+	font-size: 22px;
+}
+
+span {
+	color: #1DCCE4;
+}
+
+div.wrapper {
+    background-image: url("/images/paid-courses.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+	.wrapper {
+		height: 100vh;
+	}
+}
+
+#navBar.container {
+    margin-bottom: -10vh;
+}
+
+ul, form.d-flex {
+	align-items: center;
+}
+
+/* all li tags will margin from left 5px except for the first li */
+ul li{
+	margin-left: 20px;
+}
+ul li:first-child{
+	margin-left: 0;
+}
+/* -------------------------------------------------------- */
+
+.navbar li a.active {
+	--bs-navbar-active-color: rgb(175, 170, 157);
+}
+
+.navbar a{
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	padding: 25px;
+}
+
+form {
+    align-items: baseline;
+}
+
+form li.nav-item {
+    list-style: none;
+}
+
+@media screen and (max-width: 1200px) {
+	form.d-flex {
+		flex-direction: column;
+	}
+	div .btn-join {
+		width: 100%;
+	}
+	ul li{
+		margin-left: 0;
+	}
+}
+
+.btn.btn-join {
+    background: #FA5800;
+	border: none;
+	padding:  10px 0px;
+	border-radius: 45px;
+	width: 162px;
+}
+.btn.btn-join a {
+    font-weight: 600;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	padding: 25px
+}
+
+/* END OF NAVBAR */
+
+/* START OF HEADER */
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+	align-items: center;
+}
+
+h1.aboutReverse {
+	color: white;
+	font-weight: 600;
+	font-size: 45px;
+}
+h2.academy {
+	font-weight: 400;
+	font-size: 40px;
+	color: #1DCCE4;
+}
+p.hero-text {
+	color: white;
+	margin-bottom: 30px;
+}
+
+img.hero-img {
+	float: right;
+	width: 250px;
+}
+/* END OF HEADER */
+
+/* START OF WHAT WE DO */
+#WhatWeDo {
+	margin: 100px auto;
+	display: flex;
+	align-items: center;
+}
+.header3 {
+	font-weight: 600;
+	font-size: 60px;
+	color: #022B3D;
+	text-align: center;
+}
+.w-d-flex {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	justify-content: center;
+    flex-wrap: wrap
+}
+p.w-text {
+	color: black;
+	font-size: 20px;
+}
+/* END OF WHAT WE DO */
+
+/* START OF OUR SISTER COMPANIES*/
+#ourSister {
+	display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.img-fluid {
+	width: 120px !important;
+	align-items: center;
+}
+.img-holder {
+	background-color: #022B3D;
+	border: #022B3D 1px solid;
+	border-radius: 25px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+/* END OF OUR SISTER COMPANIES*/
+.header4 {
+	font-weight: 400;
+	font-size: 36px;
+	color: #022B3D;
+	text-align: center;
+}
+
+/* START OF  TRY OUR SELF-PACED*/
+#tryOurSelf {
+	height: 75vh;
+    flex-direction: column;
+	justify-content: center;
+    padding: 0px 140px;
+	margin: 50px auto;
+	background-image: url('/images/try-our.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#tryOurSelf .col {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#tryOurSelf h3 {
+	font-size: 66px;
+}
+#tryOurSelf .btn {
+	font-weight: 500;
+	width: 320px;
+	padding: 20px 0px;
+}
+#tryOurSelf .btn.btn-join a {
+	font-size: 28px;
+}
+/* END OF  TRY OUR SELF-PACED*/
+
+#footer {
+	background-color: #022B3D;
+	align-items: center;
+	justify-content: center;
+}
+p.footer-text {
+	margin: 20px 0px;
+	color: white;
+}
