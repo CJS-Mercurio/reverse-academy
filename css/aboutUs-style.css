@@ -129,7 +129,7 @@ form li.nav-item {
 
 .hero {
 	align-items: center;
-	/* margin: 45px auto !important; */
+	margin: 50px auto !important;
 }
 
 h1.aboutReverse {
@@ -150,8 +150,14 @@ p.hero-text {
 img.hero-img {
 	max-width: 100%;
 }
-@media (max-width: 992px){
+@media (min-width: 1440px){
 	/* CONVERT COL-8 TO COL-12 (FULL WIDTH) */
+	#header .col-sm-8 { 
+		padding-right: 120px;
+	}
+}
+
+@media (max-width: 992px){
 	#header .col-sm-8 { 
 		flex: 0 0 auto;
 		width: 100%;
@@ -159,9 +165,6 @@ img.hero-img {
 	.hero-img {
 		display: none;
 	}
-}
-
-@media (max-width: 992px){
 	.d-flex-center {
 		text-align: center!important;
 		flex-direction: column-reverse;
