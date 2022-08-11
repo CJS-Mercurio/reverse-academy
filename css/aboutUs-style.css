@@ -45,12 +45,21 @@ div.wrapper {
 
 @media screen and (min-width: 1200px) {
 	.wrapper {
-		height: 100vh;
+		height: auto;
 	}
 }
 
-#navBar.container {
-    margin-bottom: -10vh;
+
+/* @media screen and (min-width: 992px) {
+	#navBar {
+		margin-bottom: -10vh;
+	}
+} */
+
+@media screen and (max-width: 768px) {
+	#navBar {
+		margin-bottom: 0vh;
+	}
 }
 
 ul, form.d-flex {
@@ -65,18 +74,15 @@ ul li:first-child{
 	margin-left: 0;
 }
 /* -------------------------------------------------------- */
-
 .navbar li a.active {
 	--bs-navbar-active-color: rgb(175, 170, 157);
 }
-
 .navbar a{
 	font-size: 20px;
 	text-decoration: none;
 	color: white;
 	padding: 25px;
 }
-
 form {
     align-items: baseline;
 }
@@ -104,6 +110,12 @@ form li.nav-item {
 	border-radius: 45px;
 	width: 162px;
 }
+@media screen and (max-width: 1200px) {
+	#navBar .btn.btn-join {
+		width: 100%;
+	}
+}
+
 .btn.btn-join a {
     font-weight: 600;
 	font-size: 16px;
@@ -111,18 +123,13 @@ form li.nav-item {
 	color: white;
 	padding: 25px
 }
-
 /* END OF NAVBAR */
 
 /* START OF HEADER */
-.header {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
 
 .hero {
 	align-items: center;
+	/* margin: 45px auto !important; */
 }
 
 h1.aboutReverse {
@@ -141,8 +148,67 @@ p.hero-text {
 }
 
 img.hero-img {
-	float: right;
-	width: 250px;
+	max-width: 100%;
+}
+@media (max-width: 992px){
+	/* CONVERT COL-8 TO COL-12 (FULL WIDTH) */
+	#header .col-sm-8 { 
+		flex: 0 0 auto;
+		width: 100%;
+	}
+	.hero-img {
+		display: none;
+	}
+}
+
+@media (max-width: 992px){
+	.d-flex-center {
+		text-align: center!important;
+		flex-direction: column-reverse;
+	}
+}
+
+@media (max-width: 576px) {
+	.hero {
+		margin: 0px auto 45px !important;
+	}
+	h1.aboutReverse {
+		font-size: 34px;
+	}
+	h2.academy {
+		font-size: 28px;
+	}
+	p.hero-text {
+		font-size: 16px;
+	}
+	.hero-img {
+		display: none;
+	}
+	
+}
+@media (min-width: 576px){
+	#header {
+		padding-right: 3rem!important;
+    	padding-left: 3rem!important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	h1.aboutReverse {
+		font-size: 42px;
+	}
+	h2.academy {
+		font-size: 36px;
+	}
+	p.hero-text {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	#header {
+		padding-right: 115px;
+	}
 }
 /* END OF HEADER */
 
@@ -158,83 +224,210 @@ img.hero-img {
 	color: #022B3D;
 	text-align: center;
 }
-.w-d-flex {
-	display: flex;
-	flex-direction: column;
-    align-items: center;
-	justify-content: center;
-    flex-wrap: wrap
-}
 p.w-text {
 	color: black;
 	font-size: 20px;
 }
+@media screen and (max-width: 992px) {
+	#WhatWeDo {
+		margin: 60px auto;
+	}
+	#WhatWeDo .header3 {
+		font-size: 52px;
+	}
+	p.w-text {
+		font-size: 14px;
+	}
+	#WhatWeDo img {
+		width: 340px;
+	}
+}
+@media screen and (max-width: 576px) {
+	#WhatWeDo {
+		margin: 60px auto;
+	}
+	#WhatWeDo .header3 {
+		font-size: 44px;
+	}
+	p.w-text {
+		font-size: 14px;
+	}
+	#WhatWeDo img {
+		width: 260px;
+	}
+}
+.w-d-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
 /* END OF WHAT WE DO */
 
 /* START OF OUR SISTER COMPANIES*/
-#ourSister {
+.our-d-flex, div.img-holder {
 	display: flex;
-    height: 75vh;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 .img-fluid {
-	width: 120px !important;
 	align-items: center;
 }
 .img-holder {
 	background-color: #022B3D;
 	border: #022B3D 1px solid;
 	border-radius: 25px;
-	display: flex;
     align-items: center;
-    justify-content: center;
     padding: 40px;
 }
-/* END OF OUR SISTER COMPANIES*/
-.header4 {
-	font-weight: 400;
-	font-size: 36px;
-	color: #022B3D;
-	text-align: center;
+@media (min-width: 320px) {
+	#ourSister div.row {
+		margin-bottom: 2rem !important;
+	}
+	#ourSister .header3 {
+		font-size: 45px;
+	}
+	#ourSister div.row .col-sm-3 {
+		padding: 20px;
+	}
+	.img-fluid {
+		width: 80px;
+	}
+	/* .img-holder {
+		padding: 32px;
+	} */
 }
+@media (min-width: 768px) {
+	.img-fluid {
+		width: 60px;
+	}
+	.img-holder {
+		padding: 32px;
+	}
+}
+@media (min-width: 1200px) {
+	.img-fluid {
+		width: 120px !important;
+	}
+}
+/* END OF OUR SISTER COMPANIES*/
 
 /* START OF  TRY OUR SELF-PACED*/
+div.my-5 {
+	margin-top: 6rem!important;
+    margin-bottom: 6rem!important;
+}
+
 #tryOurSelf {
-	height: 75vh;
-    flex-direction: column;
-	justify-content: center;
-    padding: 0px 140px;
-	margin: 50px auto;
 	background-image: url('/images/try-our.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 #tryOurSelf .col {
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
-#tryOurSelf h3 {
-	font-size: 66px;
+
+.header4 {
+	font-weight: 400;
+	color: #022B3D;
 }
 #tryOurSelf .btn {
 	font-weight: 500;
-	width: 320px;
 	padding: 20px 0px;
 }
-#tryOurSelf .btn.btn-join a {
-	font-size: 28px;
+
+@media (min-width: 320px) and (max-width: 375px){
+	#tryOurSelf {
+		padding: 50px 5px;
+		background-image: none;
+		background-color: #f5f5f5;
+		text-align: center;
+	}
+	#tryOurSelf h3 {
+		font-size: 32px;
+	}
+	.header4 {
+		font-size: 20px;
+	}
+	#tryOurSelf .btn {
+		width: 140px;
+		padding: 8px 0px;
+	}
+	#tryOurSelf .btn.btn-join a {
+		font-size: 12px;
+		padding: 2px;
+	}
+}
+@media (min-width: 420px){
+	#tryOurSelf {
+		padding: 30px 5px;
+	}
+	#tryOurSelf h3 {
+		font-size: 28px;
+	}
+	.header4 {
+		font-size: 16px;
+	}
+	#tryOurSelf .btn {
+		width: 140px;
+		padding: 8px 0px;
+	}
+	#tryOurSelf .btn.btn-join a {
+		font-size: 12px;
+		padding: 2px;
+	}
+}
+@media (min-width: 768px) {
+	#tryOurSelf {
+		padding: 30px 140px;
+	}
+	#tryOurSelf h3 {
+		font-size: 42px;
+	}
+	.header4 {
+		font-size: 22px;
+	}
+	#tryOurSelf .btn {
+		width: 220px;
+		padding: 12px 0px;
+	}
+	#tryOurSelf .btn.btn-join a {
+		font-size: 20px;
+	}
+}
+@media (min-width: 1200px) {
+	#tryOurSelf {
+		padding: 100px 140px;
+		margin: 50px auto;
+	}
+	#tryOurSelf h3 {
+		font-size: 66px;
+	}
+	.header4 {
+		font-size: 36px;
+	}
+	#tryOurSelf .btn {
+		width: 320px;
+	}
+	#tryOurSelf .btn.btn-join a {
+		font-size: 28px;
+	}
 }
 /* END OF  TRY OUR SELF-PACED*/
 
 #footer {
 	background-color: #022B3D;
 	align-items: center;
-	justify-content: center;
 }
 p.footer-text {
 	margin: 20px 0px;
 	color: white;
+}
+@media (max-width: 576px) {
+	p.footer-text {
+		font-size: 10px;
+	}
 }
