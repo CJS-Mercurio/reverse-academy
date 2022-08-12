@@ -118,18 +118,12 @@ h1 {
 
 /*Reverse Way*/
 
-.reverse-way {
-
-	height: 65vh;
-	justify-content: center;
-}
-
 .rev-title {
 
 	text-align: center;
-	color: #3a3a3a;
+	color: #022B3D;
 	font-size: 30px;
-	margin-top: 70px;
+	margin-top: 90px;
 }
 
 .rev {
@@ -141,9 +135,10 @@ h1 {
 .card-container {
 
 	display: grid;
-  	grid-template-columns: auto auto;
-  	justify-content: center;
-  	margin-top: 40px;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 90px;
 }
 
 .rev-card {
@@ -193,7 +188,299 @@ h1 {
 
 /*Counters*/
 
+.counters {
 
+	background-color: #022B3D;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	column-gap: 100px;
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.counter {
+
+	align-self: center;
+	padding: 40px;
+}
+
+.counters h4 {
+
+	color: #00D1C9;
+}
 
 /*Counters*/
 
+/*Courses*/
+
+.course-tabs {
+	
+	display: flex;
+	justify-content: center;
+}
+
+.course-tabs button	{
+
+	color: #022B3D;
+}
+
+.tab-links {
+
+	background-color: #fff;
+	font-size: 25px;
+	font-family: inherit;
+	cursor: pointer;
+	border-style: none;
+	font-weight: 400;
+	margin: 100px 40px 70px 40px;
+	position: relative;
+}
+  
+.tab-links:active:after,  
+.active { 
+
+  height: 4px;
+  background-color: #00D1C9;
+}
+
+/*.hover-underline-animation {
+
+  
+}*/
+
+.hover-underline-animation:after {
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #00D1C9;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.tab-content {
+
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px ;
+	align-items: center;
+	margin-left: 190px;
+  margin-right: 190px;
+}
+
+.course-descipt {
+
+	padding: 20px 100px;
+	width: 550px;
+	background-color: #E5E4E2;
+}
+
+.course-cert {
+
+	display: flex;
+	margin-left: 30px;
+}
+
+.course-title {
+
+	color: #022B3D;
+	font-size: 30px;
+	margin-top: 63px;
+}
+
+.course-text {
+
+	font-size: 25px;
+	color: #022B3D;
+	margin-bottom: 30px;
+}
+
+.enroll-btn {
+
+	margin-bottom: 63px;
+}
+
+/*Courses*/
+
+/*Testimonials*/
+
+.testimonials {
+
+	background-color: #022B3D;
+}
+
+.tmnls-title {
+
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	padding-top: 90px;
+	padding-bottom: 70px;
+	margin: 0;
+}
+
+.tmnls {
+
+	color: #00D1C9;
+	font-weight: 400px;
+}
+
+.tmnls-card-container {
+
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 200px 90px 200px;
+  padding-bottom: 50px;
+}
+
+.tmnls-rev-card {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 550px;
+	border-radius: 25px;
+	box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.25);
+	padding: 20px;
+	margin: 20px;
+	background-color: #fff;
+
+}
+
+.tmnls-rev-icon {
+
+	height: 120px;
+	width: 120px;
+	padding: 10px;
+	margin-top: -100px;
+}
+
+
+.tmnls-card-text {
+
+	margin-top: 30px;
+	margin-bottom: 50px ;
+	font-size: 20px;
+	text-align: center;
+	padding: 0px 50px 0px 40px;
+}
+
+.tmnls-card-author {
+
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+/*Testimonials*/
+
+/*Accordion*/
+
+.accordion-faqs {
+	
+	display: flex;
+	margin-left: 190px;
+  margin-right: 190px;
+  column-gap: 150px;
+  justify-content: center;
+}
+
+.accordion-title {
+
+	font-size: 100px;
+	font-weight: 600;
+	color: #022B3D;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+
+.accordion-container {
+
+	width: 80%;
+  max-width: 700px;
+  margin-bottom: 100px;
+  flex-direction: column;
+}
+
+button.accordion {
+
+	font-family: "Poppins";
+	align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #00D1C9;
+  outline: none;
+  text-align: left;
+  padding: 50px 20px 20px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordion:after {
+
+  content: "\f107";
+  font-family: "fontawesome";
+  font-size: 30px;
+  font-weight: 600;
+  float: right;
+}
+
+button.accordion.is-open:after {
+
+  content: "\f106";
+}
+
+button.accordion:hover,
+button.accordion.is-open {
+
+  background-color: #ddd;
+}
+
+.accordion-content {
+
+  background-color: white;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+/*Accordion*/
+
+
+/*Footer*/
+
+.footer-container {
+
+	display: flex;
+	justify-content: center;
+	background-color: #022B3D;
+	color: #fff;
+	padding: 20px 0px;
+	font-weight: 500;
+}
+
+/*Footer*/
