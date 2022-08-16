@@ -45,7 +45,7 @@ body, html {
 	align-items: center;
 }
 
-.navbar img {
+.rev-logo {
 
 	width: 90px;
 	height: 100px;
@@ -78,11 +78,17 @@ body, html {
 	justify-content: flex-end;
 }
 
-.login-btn {
+.cart, .search, .bell {
 
-	font-family: "Poppins";
-	background-color: transparent;
-	border: none;
+	color: white;
+    padding: 10px 15px;
+}
+
+.user-icon {
+
+    height: 70px;
+    width: 70px;
+    padding: 10px;
 }
 
 .join-free {
@@ -138,7 +144,7 @@ h1 {
 
 .reverse-way {
 
-	padding-top: 20px;
+	padding-top: 50px;
 }
 
 .rev-title {
@@ -522,19 +528,31 @@ button.accordion.is-open {
 		margin: 0px 50px;
 	}
 
-	.navbar img {
+	.rev-logo {
 
 		width: 60px;
 		height: 65px;
 		margin-left: 60px;
 	}
 
-
 	.navbar a {
 
 		font-size: 18px;
 		padding: 25px 15px;
 	}
+
+    .fa {
+
+        font-size: 20px !important;
+    }
+
+    .user-icon {
+
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        margin-right: 20px;
+    }
 
 	.login {
 
