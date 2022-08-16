@@ -13,7 +13,9 @@ body, html {
 
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
+
 }
 
 /*Header*/
@@ -24,14 +26,14 @@ body, html {
 	min-height: 100vh;
 	width: 100%;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
-@media (max-width: 1280px) and (max-width: 1366px) {
+@media (min-width: 1280px){
 	
 	.homepage-hero {
 
-		background-size: contain;
+		background-size: cover;
 	}
 }
 
@@ -40,6 +42,7 @@ body, html {
 	display: flex;
 	margin: 0px 130px;
 	padding-top: 40px;
+	align-items: center;
 }
 
 .navbar img {
@@ -75,17 +78,25 @@ body, html {
 	justify-content: flex-end;
 }
 
+.login-btn {
+
+	font-family: "Poppins";
+	background-color: transparent;
+	border: none;
+}
+
 .join-free {
 
 	background: #FA5800;
 	border: none;
-	padding:  15px 30px;
+	padding:  10px 25px;
 	border-radius: 25px;
+	min-width: 250px;
 }
 
 .join-free a {
 
-	font-weight: 600;
+	font-family: "Poppins";
 	font-size: 24px;
 	text-decoration: none;
 	color: white;
@@ -94,14 +105,15 @@ body, html {
 
 .headline {
 
-	padding: 120px 190px;
+	margin: 160px 190px;
+	width: 50%;
 }
 
 h1 {
 
 	color: white;
 	font-weight: 600;
-	font-size: 55px;
+	font-size: 60px;
 }
 
 .academy {
@@ -124,12 +136,16 @@ h1 {
 
 /*Reverse Way*/
 
+.reverse-way {
+
+	padding-top: 20px;
+}
+
 .rev-title {
 
 	text-align: center;
 	color: #022B3D;
 	font-size: 30px;
-	margin-top: 90px;
 }
 
 .rev {
@@ -145,14 +161,6 @@ h1 {
   	justify-content: center;
   	margin-top: 40px;
   	margin-bottom: 90px;
-}
-
-@media (max-width: 1280px) {
-	
-	.card-container {
-
-		grid-template-columns: auto;;
-	}	
 }
 
 .rev-card {
@@ -178,7 +186,6 @@ h1 {
 .card-content {
 
 	flex-direction: column;
-
 }
 
 .card-title {
@@ -228,6 +235,11 @@ h1 {
 /*Counters*/
 
 /*Courses*/
+
+.courses {
+
+	padding-bottom: 100px;
+}
 
 .course-tabs {
 	
@@ -288,7 +300,6 @@ h1 {
 
 	display: flex;
 	justify-content: center;
-	margin-bottom: 100px ;
 	align-items: center;
 	margin-left: 190px;
   margin-right: 190px;
@@ -357,7 +368,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   margin: 40px 200px 90px 200px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .tmnls-rev-card {
@@ -495,13 +506,18 @@ button.accordion.is-open {
 }
 
 
-/* Media Queries
+/* Media Queries */
 
-@media only screen and (min-width: 1366px) { 
+@media only screen and (max-width: 1280px) { 
 
 /* Header	*/
 
-	/* .navbar {
+	.homepage-hero {
+
+		min-height: 80vh;
+	}
+
+	.navbar {
 
 		margin: 0px 50px;
 	}
@@ -538,31 +554,31 @@ button.accordion.is-open {
 
 	.headline {
 
-		margin-left: 110px;
+		margin: 100px 110px;
 	}
 
 	h1 {
 
-		margin-top: 110px;
-		font-size: 45px;
+		margin-top: 90px;
+		font-size: 40px;
 	}
 
 	.academy {
 
 		margin-top: -40px;
 		margin-bottom: -10px;
-		font-size: 45px;
+		font-size: 40px;
 	}
 
 	.hero-text {
 
-		font-size: 18px;
-	} */
+		font-size: 16px;
+	}
 
 
 /*Reverse Way*/
 
-	/* .card-container {
+	.card-container {
 
 	  margin-bottom: 60px;
 	}
@@ -570,7 +586,6 @@ button.accordion.is-open {
 	.rev-title {
 
 		font-size: 25px;
-		margin-top: -30px;
 	}
 
 	.rev-card {
@@ -592,20 +607,20 @@ button.accordion.is-open {
 	.card-text {
 
 		font-size: 18px;
-	} */
+	}
 
 
 /*Counters*/
 
-	/* .counters {
+	.counters {
 
 		column-gap: 60px;
 		font-size: 20px;
-	} */
+	}
 
 /*Courses*/
 
-	/* .tab-links {
+	.tab-links {
 
 		font-size: 20px;
 		margin: 70px 40px 50px 40px;
@@ -619,14 +634,13 @@ button.accordion.is-open {
 
 	.tab-content {
 
-		margin-bottom: 70px ;;
 		margin-left: 110px;
 	  margin-right: 110px;
 	}
 
 	.course-descipt {
 
-		padding: 20px 70px;
+		padding: 40px 70px;
 		width: 500px;
 	}
 
@@ -639,17 +653,23 @@ button.accordion.is-open {
 	.course-title {
 
 		font-size: 25px;
-		margin-top: 63px;
+		margin-top: 30px;
 	}
 
 	.course-text {
 
-		font-size: 18px;
-	} */
+		font-size: 16px;
+	}
+
+	.enroll-btn {
+
+		margin-bottom: 30px;
+	}
+	
 
 /* Testimonials */
 
-	/* .tmnls-title {
+	.tmnls-title {
 
 		font-size: 25px;
 		padding-top: 70px;
@@ -658,7 +678,7 @@ button.accordion.is-open {
 
 	.tmnls-card-container {
 
-	  margin: 40px 130px 90px 130px;
+	  margin: 40px 80px 90px 80px;
 	}
 
 	.tmnls-rev-icon {
@@ -678,11 +698,11 @@ button.accordion.is-open {
 	.tmnls-card-author {
 
 		font-size: 14px;
-	} */
+	}
 
 /*Accordion*/
 
-	/* .accordion-faqs {
+	.accordion-faqs {
 		
 		margin-left: 110px;
 	  margin-right: 110px;
@@ -709,13 +729,13 @@ button.accordion.is-open {
 	.accordion-content {
 
 	  font-size: 14px;
-	} */
+	}
 
 /*Footer*/
 
-	/* .footer-container {
+	.footer-container {
 
 		padding: 0px;
-	} */
-
-/* } Media Queries */
+	}
+ 
+} /* Media Queries */
