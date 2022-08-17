@@ -26,15 +26,7 @@ body, html {
 	min-height: 100vh;
 	width: 100%;
 	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-@media (min-width: 1280px){
-	
-	.homepage-hero {
-
-		background-size: cover;
-	}
+	background-size: cover;
 }
 
 .navbar {
@@ -83,6 +75,10 @@ body, html {
 	font-family: "Poppins";
 	background-color: transparent;
 	border: none;
+	font-size: 24px;
+	text-decoration: none;
+	color: white;
+	padding: 25px;
 }
 
 .join-free {
@@ -92,15 +88,12 @@ body, html {
 	padding:  10px 25px;
 	border-radius: 25px;
 	min-width: 250px;
-}
-
-.join-free a {
-
+	
 	font-family: "Poppins";
 	font-size: 24px;
 	text-decoration: none;
 	color: white;
-	padding: 25px;
+	padding: 10px 15px;
 }
 
 .headline {
@@ -302,13 +295,13 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	margin-left: 190px;
-  margin-right: 190px;
+  	margin-right: 190px;
 }
 
 .course-descipt {
 
 	padding: 20px 100px;
-	width: 550px;
+	min-width: 550px;
 	background-color: #E5E4E2;
 }
 
@@ -508,18 +501,18 @@ button.accordion.is-open {
 
 /* Media Queries */
 
-@media only screen and (max-width: 1280px) { 
+@media (max-width: 1365px) { 
 
 /* Header	*/
 
 	.homepage-hero {
 
-		min-height: 80vh;
+		min-height: 85vh;
 	}
-
 	.navbar {
 
 		margin: 0px 50px;
+		padding-top: 20px;
 	}
 
 	.navbar img {
@@ -536,20 +529,23 @@ button.accordion.is-open {
 		padding: 25px 15px;
 	}
 
-	.login {
+	.login-btn {
 
-		right: 30px;
+		font-size: 18px;
 	}
 
 	.join-free {
 
-		padding:  10px 30px;
-	}
-
-	.join-free a {
-
+		background: #FA5800;
+		border: none;
+		padding:  10px 25px;
+		border-radius: 25px;
+		min-width: 250px;
+		
+		font-family: "Poppins";
 		font-size: 18px;
-		padding: 10px;
+		text-decoration: none;
+		color: white;
 	}
 
 	.headline {
@@ -640,8 +636,8 @@ button.accordion.is-open {
 
 	.course-descipt {
 
-		padding: 40px 70px;
-		width: 500px;
+		padding: 50px 70px;
+		min-width: 450px;
 	}
 
 	.course-cert {
