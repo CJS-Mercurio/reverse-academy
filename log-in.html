@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/log-in-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-container">
+        <form action="submit" class="login-form">
+            <img  src="images/logo2.png" alt="logo2">
+            <div class="option">
+                <h3>Log In</h3>
+                <a class="sign-up" href="">Create an Account</a>
+            </div>
+            <label class="label-input">Email</label>
+            <input class="email">
+            <label class="label-input">Password
+            <i class="fa fa-eye hide" id="togglePassword"></i>
+            </label>
+            <input class="pass" type="password" name="password" id="password">
+            <!--  -->
+            <div class="option remember-input">
+                <label><input type="checkbox" name="remember"> Remember Me</label>
+                <span class="checkmark"></span>
+                <a class="forgot-pass" href="">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+    </div>
+
+    <script>
+
+        // SHOW/HIDE PASSWORD
+
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("fa-eye-slash");
+        });
+
+        // prevent form submit
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>
