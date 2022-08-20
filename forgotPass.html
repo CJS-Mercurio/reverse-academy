@@ -3,31 +3,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/logIn-style.css">
+    <link rel="stylesheet" type="text/css" href="css/forgotPass-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Log In - Reverse Marketing Academy</title>
+    <title>Forgot Password - Reverse Marketing Academy</title>
 </head>
 <body>
-    <div class="login-container">
-        <form action="submit" class="login-form">
+    <div class="forgot-container">
+        <form action="submit" class="forgot-form">
             <img  src="images/logo2.png" alt="logo2">
-            <div class="option">
-                <h3>Log In</h3>
-                <a class="sign-up" href="signUp.html">Create an Account</a>
-            </div>
+            <h3>Forgot Password</h3>
             <label class="label-input">Email</label>
             <input class="email">
-            <label class="label-input">Password
-            <i class="fa fa-eye hide" id="togglePassword"></i>
-            </label>
-            <input class="pass" type="password" name="password" id="password">
-            <!--  -->
-            <div class="option remember-input">
-                <label><input type="checkbox" name="remember"> Remember Me</label>
-                <span class="checkmark"></span>
-                <a class="forgot-pass" href="forgotPass.html">Forgot Password?</a>
-            </div>
-            <button type="submit" class="login-btn" onclick="window.location.href='homeLoggedIn.html'">Log In</button>
+            <button type="submit" class="forgot-btn" onclick="window.location.href='homeLoggedIn.html'">Reset Password</button>
+            <a class="log-in" href="logIn.html"><span class="or">Already have an Account?</span> Log In</a>
         </form>
     </div>
 
